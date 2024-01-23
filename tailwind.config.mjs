@@ -5,5 +5,8 @@ export default {
 	theme: {
 		extend: {},
 	},
+	daisyui: {	
+		themes: ["dark"],
+	},
 	plugins: [require('tw-elements/dist/plugin'), require("daisyui")],
 }
