@@ -1,0 +1,29 @@
+---
+import About from '../components/About.astro';
+import Contact from '../components/Contact.astro';
+import CreativeProjects from '../components/CreativeProjects.astro';
+import Education from '../components/Education.astro';
+import Experience from '../components/Experience.astro';
+import Projects from '../components/Projects.astro';
+import Skills from '../components/Skills.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Gabodev 💻" description="Welcome to my portfolio!">
+	<main>
+		<About />
+		<span id="experience" class="mx-auto flex h-24"></span>
+		<Experience />
+		<span id="education" class="mx-auto flex h-24"></span>
+		<Education />
+		<span id="skills" class="mx-auto flex h-24"></span>
+		<Skills />
+		<span id="projects" class="mx-auto flex h-5 lg:h-24"></span>
+		<Projects />
+		<!-- <span id="creativeprojects" class="mx-auto flex h-24"></span>
+		<CreativeProjects /> -->
+		<span id="contact" class="mx-auto flex h-24"></span>
+		<Contact />
+		<span class="mx-auto flex h-24"></span>
+	</main>
+</Layout>

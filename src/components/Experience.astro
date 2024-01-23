@@ -1,0 +1,48 @@
+---
+import Archive from "./icons/Archive.astro";
+import ExperienceCard from "./ExperienceCard.astro";
+
+const experience = [
+    {
+        title: "Personal projects",
+        company: "",
+        start: "Present",
+        end: "",
+        description: "At the moment, I am finishing my studies in informatics engineering at UPC while working on personal projects and seeking curricular internships.",
+        evenodd: 1
+    },
+    {
+        title: "IT Technical Support",
+        company: "IMAD Computers",
+        start: "(rejoined) 2019",
+        end: "2020",
+        description: "Training in the practical aspects of marketing, assembly, and repair of computer equipment, networks, and microcomputer services in general. Occupations and positions within the professional field include: Equipment Installer/Repair Technician, IT Support Technician, Network Technician, and Microcomputer Sales Representative.",
+        evenodd: 0
+    },
+    {
+        title: "IT Technical Support",
+        company: "IMAD Computers",
+        start: "2017",
+        end: "2018",
+        description: "Training in the practical aspects of marketing, assembly, and repair of computer equipment, networks, and microcomputer services in general. Occupations and positions within the professional field include: Equipment Installer/Repair Technician, IT Support Technician, Network Technician, and Microcomputer Sales Representative.",
+        evenodd: 1
+    },
+
+
+]
+
+
+---
+
+<section class="p-5 lg:p-0 py-8 lg:w-[52rem] mx-auto max-w-screen-xl justify-center">
+    <h1 class="text-3xl text-wrap font-extrabold text-gray-200 inline-flex items-center"><span class="pr-2"><Archive /></span>Experience</h1>
+    <div class="mt-5 lg:flex ">
+        <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+            
+                {
+                    experience.map((job) => {
+                    return <ExperienceCard {...job} />})
+                }
+        </ul>
+    </div>
+</section>

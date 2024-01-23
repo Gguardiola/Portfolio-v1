@@ -1,0 +1,38 @@
+---
+import Github from './icons/Github.astro';
+import Linkedin from './icons/Linkedin.astro';
+import MenuBars from './icons/MenuBars.astro';
+---
+
+<div class="navbar z-[99] bg-opacity-90 hover:bg-opacity-100 fixed w-full md:w-fit top-0 left-0 right-0 lg:top-5 mx-auto bg-base-100 shadow-2xl md:rounded-lg lg:justify-around lg:gap-36">
+    <div class="navbar-center md:hidden flex">
+        <details class="dropdown">
+            <summary class="m-1 btn">
+                <MenuBars />
+            </summary>
+            <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                <li><a class='no-underline font-bold m-1' href="#about">Home</a></li>
+                <li><a class='no-underline font-bold m-1' href="#experience">Experience</a></li>
+                <li><a class='no-underline font-bold m-1' href="#education">Education</a></li>
+                <li><a class='no-underline font-bold m-1' href="#skills">Skills</a></li>
+                <li><a class='no-underline font-bold m-1' href="#projects">Projects</a></li>
+                <li><a class='no-underline font-bold m-1' href="#contact">Contact me</a></li>
+            </ul>
+          </details>
+    </div>
+    <span class="md:hidden navbar-end px-1">Gabodev 💻</span>
+    <div class="hidden navbar-center md:flex">
+        <ul class="menu menu-horizontal px-1">
+            <li><a class='no-underline font-bold m-1' href="#about">Home</a></li>
+            <li><a class='no-underline font-bold m-1' href="#experience">Experience</a></li>
+            <li><a class='no-underline font-bold m-1' href="#education">Education</a></li>
+            <li><a class='no-underline font-bold m-1' href="#skills">Skills</a></li>
+            <li><a class='no-underline font-bold m-1' href="#projects">Projects</a></li>
+            <li><a class='no-underline font-bold m-1' href="#contact">Contact me</a></li>
+        </ul>
+    </div>
+    <div class="navbar-end hidden lg:flex gap-5 px-2">
+        <a href="https://github.com/Gguardiola" class="m-1 opacity-80 hover:opacity-100"target="_blank"><Github class="size-6"/></a>
+        <a href="https://www.linkedin.com/in/gabriel-guardiola/" class="m-1 opacity-80 hover:opacity-100" target="_blank"><Linkedin class="size-6" /></a>
+    </div>
+</div>

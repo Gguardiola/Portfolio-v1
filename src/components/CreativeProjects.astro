@@ -1,0 +1,163 @@
+---
+import Fork from "./icons/Fork.astro";
+import Github from "./icons/Github.astro";
+import MagicWand from "./icons/MagicWand.astro";
+import PreviewBadge from "./icons/PreviewBadge.astro";
+
+const projects = [
+    {
+        title: "SIDIUS - Captive Portal",
+        description: "SIDIUS PROJECT is a captive portal made with the objective to have an easy installation and configuration on any Linux machine. It is aimed to public commerces and premises that have a considerable amount of people at day, e.g.: Airports, Hotel lobbies...",
+        tags: ["Linux", "Apache", "PHP", "MySQL", "Firewall", "Python"],
+        image: "/projects/sidius.jpg",
+        url: "https://github.com/gguardiola/Sidius-CaptivePortal",
+        preview: ""
+    },
+    {
+        title: "Boira Microservices V1",
+        description: "microservices architecture that I have designed and implemented for the deployment of my personal projects in a production environment.",
+        tags: ["Docker", "NGINX", "Microservices", "Proxy", "REST API"],
+        image: "/projects/boira.jpg",
+        url: "https://github.com/Gguardiola/Boira-Microservices-v1",
+        preview: ""
+    },
+    {
+        title: "GoodGifts",
+        description: "(WIP) Web application using NextJS and React",
+        tags: ["React", "NextJS", "TailwindCSS", "TypeScript"],
+        image: "/projects/goodgifts.jpg",
+        url: "https://github.com/gguardiola/goodgifts-nextjs-app",
+        preview: "https://goodgifts.gabodev.com/login"
+    },
+    {
+        title: "GoodGifts REST API",
+        description: "GoodGifts API provides all the functionability for the Web Application.",
+        tags: ["NodeJS", "Express", "PostgreSQL", "JavaScript"],
+        image: "/projects/na.jpg",
+        url: "https://github.com/gguardiola/goodgifts-rest-api",
+        preview: ""
+    },
+    {
+        title: "Auth Service API",
+        description: "GoodGifts API provides all the functionability for the Web Application.",
+        tags: ["NodeJS", "Express", "PostgreSQL", "JWT"],
+        image: "/projects/auth.jpg",
+        url: "https://github.com/Gguardiola/auth-service",
+        preview: ""
+    },
+    {
+        title: "TRANSMED Project",
+        description: "Asociated with UPC - IT project where an intelligent and autonomous transportation infrastructure was developed to facilitate the distribution of medications within various urban areas.",
+        tags: ["Scrum", "NodeJS", "Python", "React", "JavaScript", "NextJS", "MongoDB", "Docker", "NGINX", "Microservices", "Proxy", "Figma"],
+        image: "/projects/transmed.jpg",
+        url: "https://github.com/PTIN-2023/web",
+        preview: ""
+    },
+    {
+        title: "TFTP Server/client",
+        description: "TFTP server and client implementation in Python",
+        tags: ["Python", "TFTP", "Socket", "UDP"],
+        image: "/projects/na.jpg",
+        url: "https://github.com/Gguardiola/XACO-Protocol-TFTP",
+        preview: ""
+    },
+    {
+        title: "PokedleAI",
+        description: "(WIP) TypeScript & Jquery project made for a demo",
+        tags: ["NodeJS", "TypeScript", "Jquery"],
+        image: "/projects/pokedleai.jpg",
+        url: "https://github.com/Gguardiola/PMUD-PokedleAI",
+        preview: "https://gguardiola.github.io/PMUD-PokedleAI/"
+    },
+    {
+        title: "Marvelbase - Android App",
+        description: "Android application that displays Marvel comics, characters and creators directly from the official Marvel API.",
+        tags: ["Firestore", "Java", "Android Studio", "Figma"],
+        image: "/projects/marvelbase.jpg",
+        url: "https://github.com/Gguardiola/AndroidProject-Marvelbase",
+        preview: ""
+    },
+
+]
+
+
+---
+
+
+<section class="p-5 lg:p-0 py-8 mx-auto max-w-screen-xl justify-center">
+    <h1 class="text-3xl text-wrap font-extrabold text-gray-200 inline-flex items-center"><span class="pr-2"><MagicWand /></span>Creative projects</h1>
+    <div class="mt-5 flex overflow-x-auto overflow-y-hidden">
+        <div class="flex-shrink-0 w-full">
+            <div class="mx-auto"><img src="/creativeProjects/HornetDef.jpg" alt="Image 1"/></div>
+        </div> 
+        <div class="flex-shrink-0 w-full">
+            <div class="mx-auto"><img class="h-full" src="/creativeProjects/japan_final1.jpg" alt="Image 2"/></div>
+        </div> 
+        <div class="flex-shrink-0 w-full">
+            <div class="mx-auto"><img class="h-full" src="/creativeProjects/japan_final2.jpg" alt="Image 3"/></div>
+        </div> 
+        <div class="flex-shrink-0 w-full">
+            <div class="mx-auto"><img class="h-full" src="/creativeProjects/japan_final3.jpg" alt="Image 4"/></div>
+        </div>
+        <div class="flex-shrink-0 w-full">
+            <div class="mx-auto"><img class="h-full" width="1920" height="1080" src="/creativeProjects/pochitaDef1.png" alt="Image 5"/></div>
+        </div>
+        <div class="flex-shrink-0 w-full">
+            <div class="mx-auto"><img class="h-full" width="1920" height="1080" src="/creativeProjects/pochitaDef2.png" alt="Image 6"/></div>
+        </div>
+        <div class="flex-shrink-0 w-full">
+            <div class="mx-auto"><img class="h-full" width="1920" height="1080" src="/creativeProjects/pochitaDef3.png" alt="Image 7"/></div>
+        </div>
+    </div>
+    <!-- <div class="hidden md:flex mt-5 carousel rounded-lg">
+        <div id="slide1" class="carousel-item relative w-full">
+            <div class="mx-auto"><img src="/creativeProjects/HornetDef.jpg"/></div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide7" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+            <div class="mx-auto"><img class="h-full" src="/creativeProjects/japan_final1.jpg"/></div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+            <div class="mx-auto"><img class="h-full" src="/creativeProjects/japan_final2.jpg"/></div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <div class="mx-auto"><img class="h-full" src="/creativeProjects/japan_final3.jpg"/></div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide5" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide5" class="carousel-item relative w-full">
+            <div class="mx-auto"> <img class="h-full" src="/creativeProjects/pochitaDef1.png"/></div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide6" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide6" class="carousel-item relative w-full">
+            <div class="mx-auto"> <img class="h-full" src="/creativeProjects/pochitaDef2.png"/>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide5" class="btn btn-circle">❮</a> 
+            <a href="#slide7" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide7" class="carousel-item relative w-full">
+            <div class="mx-auto"><img class="h-full" src="/creativeProjects/pochitaDef3.png"/></div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide6" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div> -->
+</section>

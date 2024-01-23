@@ -1,0 +1,45 @@
+---
+import Archive from "./icons/Archive.astro";
+import EducationCard from "./EducationCard.astro";
+import Landmark from "./icons/Landmark.astro";
+
+const education = [
+    {
+        title: "Informatics Engineering Degree",
+        company: "UPC (Universitat Politècnica de Catalunya)",
+        start: "2020",
+        end: "present",
+        description: "Throughout my engineering studies, I have learned the fundamentals of computer science, optimized low-level programming of data structures, software engineering (UML, specification, design...), OOP programming, working on projects using Scrum and Kanban methodologies, and much more.",
+        evenodd: 0
+    },
+    {
+        title: "CFGS Administration of Computer Systems in Networking (ASIX)",
+        company: "INS Joaquim Mir",
+        start: "2018",
+        end: "2020",
+        description: "In this course, I learned to securely manage networks (firewall, DHCP, DNS, Proxy...), configure Cisco network devices, handle databases, system administration (Active Directory, LDAP, etc...), backend technologies such as PHP, and manage high availability and redundant servers.",
+        evenodd: 1
+    },
+    {
+        title: "CFGM - Microcomputer Systems and Networks",
+        company: "INS Ernest Lluch i Martí",
+        start: "2017",
+        end: "2018",
+        description: "Here, I learned the fundamentals of computer science, starting with office applications, Linux command line, data protection laws, and general system administration.",
+        evenodd: 0
+    },
+]
+---
+
+<section class="p-5 lg:p-0 py-8 lg:w-[52rem] mx-auto max-w-screen-xl">
+    <h1 class="text-3xl text-wrap font-extrabold text-gray-200 inline-flex items-center"><span class="pr-2"><Landmark /></span>Education</h1>
+    <div class="mt-5 lg:flex ">
+        <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+            
+                {
+                    education.map((job) => {
+                    return <EducationCard {...job} />})
+                }
+        </ul>
+    </div>
+</section>
